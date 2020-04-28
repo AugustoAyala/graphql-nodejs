@@ -1,0 +1,14 @@
+type Query {
+  ping: String!
+  tasks: [Task!]
+}
+
+type Mutation {
+  createTask(name: String!, description: String!): Task
+}
+
+type Task {
+  _id: ID!
+  name: String!
+  description: String!
+}
